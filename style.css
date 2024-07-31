@@ -1,0 +1,57 @@
+body {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+.decision {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.radioButtons {
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: "700";
+  font-style: normal;
+}
+
+#parentAndMeImg,
+#littleSeahorseImg,
+#littleTurtleImg,
+#littleOtterImg,
+#bigTurtleImg,
+#bigOtterImg,
+#bigSeahorseImg,
+#sealImg,
+#orcaImg,
+#advancedSwimmerImg,
+#neuroDiverseImg {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.register {
+  background-color: #9fdfed;
+  width: 200px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#reset {
+  margin-top: 20px;
+}

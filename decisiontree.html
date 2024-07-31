@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <title>Brave Waves Decision Tree</title>
+  </head>
+  <body>
+    <div class="decision">
+      <div class="form">
+        <form>
+          <h2>Choose your child's age and skill level</h2>
+          <fieldset class="radioButtons">
+            <input type="radio"  id="parentAndMe" name="age" />
+            <label for="radio">6 months - 2 years</label><br />
+            <input type="radio"  id="squid" name="age" />
+            <label for="radio">2-3 years</label><br />
+            <input type="radio" name="age"  id="fourfive" />
+            <label for="radio">4-5 years</label><br />
+            <fieldset class="level1 hidden">
+              <p>My child:</p>
+              <input
+                type="radio"
+                name="level1"
+                value="1"
+                id="level1cannotswim"
+              />
+              <label for="radio">cannot swim</label><br />
+              <input
+                type="radio"
+                name="level1"
+                value="2"
+                id="level1headUnderWater"
+              />
+              <label for="radio"
+                >is comfortable putting their head under water</label
+              ><br />
+              <input
+                type="radio"
+                name="level1"
+                value="3"
+                id="level1shortDistance"
+              />
+              <label for="radio"
+                >is able to swim a short distance with their head in the water
+                (no floaties needed)</label
+              ><br />
+              <input
+              type="radio"
+              name="level1"
+              value="3"
+              id="level1Strokes"
+            />
+              <label for="radio"
+                >has started to learn swim strokes such as freestyle or backstroke
+                </label
+              ><br />
+            </fieldset>
+            <input type="radio" name="age" value="4" id="sixseven" />
+            <label for="radio">6-9 years</label><br />
+            <fieldset class="level2 hidden">
+              <p>My child:</p>
+              <input type="radio" name="level2" id="level2cannotswim"/>
+              <label for="radio">cannot swim</label><br />
+              <input type="radio" name="level2" id="level2headUnderWater"/>
+              <label for="radio"
+                >is comfortable putting their head under water</label
+              ><br />
+              <input type="radio" name="level2" id="level2shortDistance" />
+              <label for="radio"
+                >is able to swim a short distance with their head in the water
+                (no floaties needed)</label
+              ><br />
+              <input type="radio" name="level2" id="level2learningStrokes"/> 
+           <label for="radio"
+                >has started to learn swim strokes like freestyle and
+                backstroke</label
+              ><br />
+              <input type="radio" name="level2" id="level2oneLength"/>
+              <label for="radio">
+                can swim a maximum of 25m </label
+              ><br />
+              <input type="radio" name="level2" id="level2fewLengths"/>
+              <label for="radio">
+                can swim a few lengths </label
+              ><br />
+            </fieldset>
+         
+          <input type="radio" name="age" value="4" id="tenplus" />
+            <label for="radio">10+ years</label><br />
+            <fieldset class="level3 hidden">
+              <p>My child:</p>
+              <input type="radio" name="level3" id="level3oneLength"/>
+              <label for="radio"> can swim a maximum of 25m</label><br />
+              <input type="radio" name="level3" id="level3fewLengths"/>
+              <label for="radio"
+                >can swim a few lengths</label
+              ><br />
+              <input type="radio" name="level3" id="level3swim100m" />
+              <label for="radio"
+                >is working towards swimming 100m of each stroke</label
+              ><br />
+              <input type="radio" name="level3" id="level3swim200m"/> 
+           <label for="radio"
+                >is working towards swimming 200m of each stroke</label
+              ><br />
+              <input type="radio" name="level3" id="level3swim300m"/>
+              <label for="radio">
+                is working towards swimming 300m of each stroke </label
+              ><br />
+              <input type="radio" name="level3" id="level3swim400m"/>
+              <label for="radio">
+                is working towards swimming 400m of each stroke and obtaining National Lifeguard certification</label
+              ><br />
+            </fieldset>
+          </fieldset>
+          <fieldset>
+            <input type="checkbox" id="neuro1" name="neuro1" value="neuro1">
+            <label for="neuro1">My child has a neurodiversity but can operate in a traditional semi-private lesson setting (2 children per class)</label><br />
+            <p class="neuro1desc hidden">Please choose the best fit for your child from the options above.  We will ensure that your child is assigned to an appropriate semi-private lesson setting. When registering for the class, please indicate that your child has a neurodiversity.</p>
+            <input type="radio" id="neuro2" name="neuro2" value="neuro2">
+            <label for="neuro1">My child has a neurodiversity and will require additional assistance</label>
+          </fieldset>
+          <input type="reset" id="reset" value="Reset the form" />
+        </form>
+      </div>
+      <div class="selection">
+        <h2>Recommended class</h2>
+        <div class="class-selection">
+          <p class="swim-class">Choose an option to the left</p>
+          <div class="parentAndMeDesc hidden">
+
+            <img src="images/parent-and-me.webp" alt="Parent swimming with child" width="150px" id="parentAndMeImg">
+            <h3>Parent and Me (Ages 6 months to 2 years) - Jellyfish</h3>
+ <p>This course is for our littlest swimmers! This is our <strong>first experience</strong> in learning to love the water and we love doing this with the people we love most! Brave Waves introduces an aquatic environment and basic skills through guided instruction, physical manipulation and play. Designed for babies 6 months - about 2 years old but can accommodate all beginner swimmers until the age of 3 years old based on needs and confidence.
+</p>
+
+
+<p>All lessons are six-on-one.</p>
+
+<p><strong>Parents must enter the water with their child.</strong></p>
+
+<p>No puddle jumper or lifejacket required.</p>
+
+<p>Children who are not potty trained must be wearing a Happy Nappy duo swim diaper in order to enter the pool. These swim diapers are available for purchase at our facility. </p>
+
+<button class="register">Register Now!</button>
+        </div>
+ <div class="squidDesc hidden">
+
+          <img src="images/parent-and-me.webp" alt="Parent swimming with child" width="150px" id="parentAndMeImg">
+          <h3>Squids (Ages 2 to 4)</h3>
+<p>This course is designed to continue building familiarity and confidence in the water with a focus on controlled <strong>breathing, floating, kicking, and wet faces.</strong> First lessons with an instructor and without a parent - exciting! Designed for toddlers 2 - 4 years old.
+
+
+</p>
+
+
+<p>All lessons are two-on-one.</p>
+
+<p>No puddle jumper or lifejacket required.</p>
+
+<p>Children who are not potty trained must be wearing a Happy Nappy duo swim diaper in order to enter the pool. These swim diapers are available for purchase at our facility. </p>
+
+<button class="register">Register Now!</button>
+      </div>
+      <div class="littleSeahorseDesc hidden">
+
+        <img src="images/littleseahorse.webp" alt="Adult swimming with child" width="150px" id="littleSeahorseImg">
+        <h3>Level 1 - Little Seahorse (Ages 4-5)</h3>
+<p><strong>This is the beginner class for ages 3-5.</strong>  Seahorse is designed for new swimmers to develop foundational swim skills, beginner ability and confidence in the water as well as safe and appropriate relationships with an aquatic environment. Swimmers are <strong>assisted with skills</strong> like safe entrances to and exits from the water, floats, flutter kicks, roll-overs and open eyes underwater! 
+</p>
+
+
+<p>All lessons are two-on-one.</p>
+
+<p>No puddle jumper or lifejacket required.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<p>Children who are not potty trained must be wearing a Happy Nappy duo swim diaper in order to enter the pool. These swim diapers are available for purchase at our facility. </p>
+
+<button class="register">Register Now!</button>
+    </div>
+    <div class="bigSeahorseDesc hidden">
+
+      <img src="images/big_seahorse.webp" alt="Adult swimming with child" width="150px" id="bigSeahorseImg">
+      <h3>Level 1 - Big Seahorse (Ages 6+)</h3>
+<p><strong>This is the beginner class for ages 6+.</strong>  Seahorse is designed for new swimmers to develop foundational swim skills, beginner ability and confidence in the water as well as safe and appropriate relationships with an aquatic environment. Swimmers are <strong>assisted with skills</strong> like safe entrances to and exits from the water, floats, flutter kicks, roll-overs and open eyes underwater! 
+</p>
+
+
+<p>All lessons are two-on-one.</p>
+
+<p>No puddle jumper or lifejacket required.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<p>Children who are not potty trained must be wearing a Happy Nappy duo swim diaper in order to enter the pool. These swim diapers are available for purchase at our facility. </p>
+
+<button class="register">Register Now!</button>
+  </div>
+    <div class="littleTurtleDesc hidden">
+
+      <img src="images/littleturtle.webp" alt="Adult swimming with child" width="150px" id="littleTurtleImg">
+      <h3>Level 2 - Little Turtle (Ages 3-5)</h3>
+<p><strong>This is the class for graduates of the Little Seahorse class ages 3-5.</strong> Turtle swimmers build on foundational swim skills with longer time durations and distances among other lesson topics. Lessons are designed to develop core movements to be strong and confident enough for beginner exposure to independent swim. Swimmers will <strong>need less assistance</strong> to navigate around the pool and contextual knowledge is integrate to build a safe relationship with aquatic environments. <strong>Graduates of this class will move on to Little or Big Otter depending on their age.</strong>
+
+
+</p>
+
+
+<p>All lessons are two-on-one.</p>
+
+<p>No puddle jumper or lifejacket required.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<p>Children who are not potty trained must be wearing a Happy Nappy duo swim diaper in order to enter the pool. These swim diapers are available for purchase at our facility. </p>
+
+<button class="register">Register Now!</button>
+  </div>
+  <div class="bigTurtleDesc hidden">
+
+    <img src="images/big_turtle.webp" alt="Adult swimming with child" width="150px" id="bigTurtleImg">
+    <h3>Level 2 - Big Turtle (Ages 6+)</h3>
+<p><strong>This is the class for graduates of the Seahorse class ages 6+.</strong> Turtle swimmers build on foundational swim skills with longer time durations and distances among other lesson topics. Lessons are designed to develop core movements to be strong and confident enough for beginner exposure to independent swim. Swimmers will <strong>need less assistance</strong> to navigate around the pool and contextual knowledge is integrate to build a safe relationship with aquatic environments. <strong>Graduates of this class will move on to Little or Big Otter depending on their age.</strong>
+
+
+</p>
+
+
+<p>All lessons are two-on-one.</p>
+
+<p>No puddle jumper or lifejacket required.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<p>Children who are not potty trained must be wearing a Happy Nappy duo swim diaper in order to enter the pool. These swim diapers are available for purchase at our facility. </p>
+
+<button class="register">Register Now!</button>
+</div>
+  <div class="littleOtterDesc hidden">
+
+    <img src="images/littleotter.webp" alt="Adult swimming with child" width="150px" id="littleOtterImg">
+    <h3>Level 3 - Little Otter (Ages 5-7)</h3>
+<p><strong>This is for graduates of the turtle class for ages 5-7.</strong> Otter swimmers are challenged to trust their skills and take hold of their independence by <strong>performing floats, glides, breaths and streamline kicks unassisted! </strong> Lessons are designed to bridge the gap between assisted and unassisted swim by establishing strong, steady, and consistent body positions on fronts and backs that will be able to support complex movements in the next level. 
+
+</p>
+
+
+<p>All lessons are three-on-one.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<p>New swimmers must complete a swim test to qualify for this level.</p>
+
+<button class="register">Register Now!</button>
+</div>
+<div class="bigOtterDesc hidden">
+
+  <img src="images/big_otter.webp" alt="Adult swimming with child" width="150px" id="bigOtterImg">
+  <h3>Level 3 - Big Otter (Ages 6+)</h3>
+<p><strong>This is for graduates of the turtle class for ages 6+.</strong> Otter swimmers are challenged to trust their skills and take hold of their independence by <strong>performing floats, glides, breaths and streamline kicks unassisted! </strong> Lessons are designed to bridge the gap between assisted and unassisted swim by establishing strong, steady, and consistent body positions on fronts and backs that will be able to support complex movements in the next level. 
+
+</p>
+
+
+<p>All lessons are three-on-one.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<p>New swimmers must complete a swim test to qualify for this level.</p>
+
+<button class="register">Register Now!</button>
+</div>
+<div class="sealDesc hidden">
+
+  <img src="images/seal.webp" alt="Adult swimming with child" width="150px" id="sealImg">
+  <h3>Level 4 - Seal (Ages 6+)</h3>
+<p><strong>Swimmers are independent. New swimmers must complete a swim test to qualify for this level.</strong>  Seal swimmers are <strong>introduced to stroke deconstruction</strong> - development in isolated parts! Lessons are designed to take apart our complex strokes before they are performed in entirety and to develop more advanced safety, proficiency, and body control skills like treading water, various recovery depths and several entries.
+</p>
+
+<p>All lessons are three-on-one.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<button class="register">Register Now!</button>
+
+</div>
+<div class="orcaDesc hidden">
+
+  <img src="images/orca.webp" alt="Child about to dive into pool" width="150px" id="orcaImg">
+  <h3>Level 5 - Orca (Ages 6+)</h3>
+<p><strong>New swimmers must complete a swim test to qualify for this level.</strong> Orca, the final level of our Foundational Classes, prepares students to be a competent <strong>basic swimmer (pool level)</strong>. Swimmers develop their three lifesaving strokes Front Crawl, Backstroke and Breaststroke to a proficiency of 25 meters each among other advanced supplementary skills. Lessons are designed to draw on the muscle memory and reflexes that several seasons of experience and knowledge have developed to achieve advanced and effective swim skill and prepare students for proficiency training that would earn them the skills to be a competent swimmer in all types of water (ocean, lake, river, etc.)*.
+
+  *within reason of safety conditions
+</p>
+
+<p>All lessons are four-on-one.</p>
+
+<p> Goggles are strongly recommended and can be purchased at our facility.</p>
+
+<button class="register">Register Now!</button>
+
+      </div>
+      <div class="lakeOntarioDesc hidden">
+
+        <img src="images/advancedSwimmer.webp" alt="Child swimming and wearing goggles" width="150px" id="advancedSwimmerImg">
+        <h3>Advanced Level 1 - Lake Ontario (Ages 8+)</h3>
+      <p>Mastery of swimming begins. Swimmers <strong>continue with the front crawl and backstroke skills</strong> they learned in their foundational classes while <strong>adding head up front crawl and breaststroke.</strong> Swimmers also start completing 25 meters of full stroke as well as dive skills.</p>
+
+ 
+
+        <p>All lessons are four-on-one.</p> 
+        
+        <p>Goggles are strongly recommended and can be purchased at our facility.</p>
+        
+        <p>Designed for swimmers 8+ with previous swim lesson qualifications. New swimmers must complete a swim test to qualify for this level.</p>
+        
+        <p>This class is 50 minutes long per lesson.
+        </p>
+     
+        <button class="register">Register Now!</button>
+            </div>
+            <div class="lakeErieDesc hidden">
+
+              <img src="images/advancedSwimmer.webp" alt="Child swimming and wearing goggles" width="150px" id="advancedSwimmerImg">
+              <h3>Advanced Level 2 - Lake Erie (Ages 8+)</h3>
+            <p> Enriched training begins for those who want to <strong>develop all four swim strokes</strong> as butterfly skills are introduced in this level. Swimmers are now doing <strong>multiple laps to build endurance.</strong> Swim Challenges include treading water endurance, <strong>25 meter sprints,</strong> dives and sprints.</p>
+       
+      
+              <p>All lessons are four-on-one.</p> 
+              
+              <p>Goggles are strongly recommended and can be purchased at our facility.</p>
+              
+              <p>Designed for swimmers 8+ with previous swim lesson qualifications. New swimmers must complete a swim test to qualify for this level.</p>
+              
+              <p>This class is 50 minutes long per lesson.
+              </p>
+           
+              <button class="register">Register Now!</button>
+                  </div>
+                  <div class="lakeHuronDesc hidden">
+
+                    <img src="images/advancedSwimmer.webp" alt="Child swimming and wearing goggles" width="150px" id="advancedSwimmerImg">
+                    <h3>Advanced Level 3 - Lake Huron (Ages 8+)</h3>
+                  <p>  Swimmers continue core stroke development for <strong>front crawl, backstroke, breaststroke, and butterfly.  Lifesaving strength skills are introduced </strong>to reinforce proper and effective swim technique and include skills such as <strong>deep object retrieval and 25m assist carry.</strong> Endurance improves in 200 m workout, and <strong>four interval training bouts of 50m swims.</strong></p>
+             
+            
+                    <p>All lessons are four-on-one.</p> 
+                    
+                    <p>Goggles are strongly recommended and can be purchased at our facility.</p>
+                    
+                    <p>Designed for swimmers 8+ with previous swim lesson qualifications. New swimmers must complete a swim test to qualify for this level.</p>
+                    
+                    <p>This class is 50 minutes long per lesson.
+                    </p>
+                 
+                    <button class="register">Register Now!</button>   
+                        </div>
+            <div class="lakeMichiganDesc hidden">
+
+              <img src="images/advancedSwimmer.webp" alt="Child swimming and wearing goggles" width="150px" id="advancedSwimmerImg">
+              <h3>Advanced Level 4 - Lake Michigan (Ages 8+)</h3>
+            <p>  Strength, endurance, and control in the water are fortified so that swimmers carry these skills for the rest of their lives. In this level swimmers <strong>complete a 250m swim.</strong> Endurance is tested with timed swims and <strong>treading water for 3 minutes</strong>. Lifesaving strength skills continue with scissor kick and assist carry for 25 meters as well as an eggbeater kick and assist carry for 50 meters.</p>
+        
+      
+              <p>All lessons are four-on-one.</p> 
+              
+              <p>Goggles are strongly recommended and can be purchased at our facility.</p>
+              
+              <p>Designed for swimmers 8+ with previous swim lesson qualifications. New swimmers must complete a swim test to qualify for this level.</p>
+              
+              <p>This class is 50 minutes long per lesson.
+              </p>
+            
+              <button class="register">Register Now!</button>
+                  </div>
+                  <div class="lakeSuperiorDesc hidden">
+
+                    <img src="images/advancedSwimmer.webp" alt="Child swimming and wearing goggles" width="150px" id="advancedSwimmerImg">
+                    <h3>Advanced Level 5 - Lake Superior (Ages 8+)</h3>
+                  <p>  Swimmers prove their absolute proficiency. This level necessitates the physical strength, endurance, and control it takes to be start lifesaving training. Mastery of independent swim is earned by swimming a 300m workout, head-up breaststroke sprints over 25 m, and sprinting a challenge of 50 meters in 90 seconds. Accompanying lifesaving skills challenge and improve our own movement to create effective and strong swimmers for life. Swimmers are encouraged to enrol in the Lifesaving society courses: Patrols for 12 and under and Bronze Medallion for 13 and over after the completion of this level.
+
+                  </p>
+              
+            
+                    <p>All lessons are four-on-one.</p> 
+                    
+                    <p>Goggles are strongly recommended and can be purchased at our facility.</p>
+                    
+                    <p>Designed for swimmers 8+ with previous swim lesson qualifications. New swimmers must complete a swim test to qualify for this level.</p>
+                    
+                    <p>This class is 50 minutes long per lesson.
+                    </p>
+                  
+                    <button class="register">Register Now!</button>
+                        </div>
+                        <div class="neuroDiverseDesc hidden">
+
+                          <img src="images/neurodiverse.webp" alt="Child swimming with adult" width="150px" id="neuroDiverseImg">
+                          <h3>Students with Neuro-Diversities and/or Disabilities</h3>
+                        <p>  Brave Waves takes pride in offering swimming lessons for children with special considerations.</p>
+
+                        <p>Most swimmers with neuro-diversities and/or disabilities are integrated into our regular semi-private and small group swim programs because of our low instructor/student ratio. Other times, students need some extra consideration.</p>
+                    
+                  
+                          <p>Students that require 1:1 attention or need to have a guardian enter the pool with them will have the ability to book private lessons by calling us at 519-861-9300. A Brave Waves assessment will be necessary for them to qualify for the program. Guardians must be prepared to enter the water for the assessment if the instructors deem it necessary. For more information on tuition rates, please check our tuition rates page.</p> 
+                          
+                         
+                        
+                        
+                              </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
